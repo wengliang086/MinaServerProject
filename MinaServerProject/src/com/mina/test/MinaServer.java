@@ -24,6 +24,7 @@ public class MinaServer {
 		acceptor.getSessionConfig().setIdleTime(IdleStatus.BOTH_IDLE, 10);
 		try {
 			acceptor.bind(new InetSocketAddress(9999));
+			System.out.println("服务器启动成功，监听端口：9999");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
